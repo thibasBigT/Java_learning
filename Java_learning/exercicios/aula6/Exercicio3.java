@@ -1,5 +1,6 @@
 package aula6;
 import java.util.Scanner;
+// diz se um aluno reprovou ou foi aprovado
 public class Exercicio3 {
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
@@ -10,16 +11,20 @@ public class Exercicio3 {
 		double nota3 = Double.parseDouble(entrada.nextLine());
 		double nota4 = Double.parseDouble(entrada.nextLine());
 		
-		double media = nota1 + nota2 + nota3 + nota4 / 4;
+		double media = (nota1 + nota2 + nota3 + nota4) / 4;
 		
-		if (media >= 7) { // Aprovado
-			System.out.println("Aluno aprovado");
+		if (media >= 7) { // Aprovado se a media for maior ou igual a 7
+			System.out.println("Media: " +media+ ", Aluno aprovado");
 			
-		} else if (media = 7) {
-			System.out.println("Aluno em recuperação");
-		} else
+		} else if (media > 5 && media < 7) { // recuperação se a media for entre 5 e 6.99
+			System.out.println("Media: " +media+ ", Aluno em recuperacao");
+		} else { //reprovado
+			System.out.println("Media: " +media+ ", Aluno reprovado");
+		}
 		
-	
+		
+		entrada.close();
+		
 	}
 
 }
