@@ -1,10 +1,11 @@
 package aula7;
 import java.util.Scanner;
+// soma todos os numeros até chegar um um numero teto declarado pelo usuario
 public class Exercicio8 {
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
-		int n,i,nN;
+		int n,i,nN; //N armazena o numero teto do usuario, i é meu iterador e o numero que soma dentro de nN até ser chegar no numero do usuario teto.
 		
 		do {
 			System.out.println("Digite um numero n para mim lhe mostrar a soma do intervalo entre ele e 1");
