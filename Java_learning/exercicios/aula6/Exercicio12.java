@@ -40,10 +40,10 @@ public class Exercicio12 {
 		System.out.println("TRIANGULO EQUILATERO");
 	} else if (a == b || a == c) {
 		System.out.println("TRIANGULO ISOSCELES;");
-	} else {
-		System.out.println("Nenhum dos casos");
-	}
 	
 	}
 	
+	
+		
+	}
 }
